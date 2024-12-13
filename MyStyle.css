@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+.main_box {
+    height: 100vh;
+    background: url("faded_gallery-OfdOEdGYiuk-unsplash.jpg");
+    background-size: cover;
+}
+#check {
+    display: none;
+}
+.btn_one i {
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s ease-out ;
+}
+.sidebar_menu {
+    height: 100%;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: -333px;
+    transition: .3s linear;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+.sidebar_menu .logo a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 30px;
+    /* padding-left: 20px; */
+    line-height: 50px;
+    font-weight: 700;
+    width: 200px;
+    text-align: center;
+    /* box-shadow: 0 0 4px; */
+}
+.btn_two  {
+    position: fixed;
+    left: 175px;
+    top: 5;
+    opacity: 0; /* Initially hidden */
+    color: gray;
+    cursor: pointer;
+}
+.btn_two i{
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    width: 200px;
+}
+.menu ul li {
+    margin: 30px 0 30px 0;
+    width: 180px;
+    opacity: .6;
+    transition: .2s linear;
+    
+}
+.social_media {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    color: white;
+}
+.social_media ul  a i {
+    color: white;
+    opacity: .5;
+    transition: .2s linear;
+    letter-spacing: 5px;
+}
+/* .menu ul li a, */
+.menu ul li, .menu ul li a  {
+    text-decoration: none;
+    /* margin-left: 10px; */
+    color: white;
+}
+#check:checked ~ .sidebar_menu {
+    left: 0px;
+}
+#check:checked ~ .btn_one i {
+    opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two,.sidebar_menu .btn_two i {
+    opacity: 1; /* Change opacity for .btn_two */
+}
+.btn_one i:hover{
+    transform: scale(1.5);
+    
+}
+.menu ul li:hover {
+    /* box-shadow: 0 0 2px; */
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+.social_media ul a i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.line{
+    font-family: "Caveat", cursive;
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    color: wheat;
+    font-size: 44px;
+    font-weight: 600;
+}
+#s1{
+    position: absolute;
+    top: 30px;
+    width: 300PX;
+}
